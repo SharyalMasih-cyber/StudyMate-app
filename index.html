@@ -1012,60 +1012,121 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 const quizQuestionsBySubject = {
     computer: [
-        {
-            question: "What does CPU stand for?",
-            options: ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Control Processing User"],
-            answer: 0
-        },
-        {
-            question: "Which part is called the brain of a computer?",
-            options: ["Monitor", "Keyboard", "CPU", "Mouse"],
-            answer: 2
-        },
-        {
-            question: "Which device is used to type text?",
-            options: ["Monitor", "Keyboard", "Speaker", "Printer"],
-            answer: 1
-        },
-        {
-            question: "Which device displays output?",
-            options: ["Mouse", "Scanner", "Monitor", "Microphone"],
-            answer: 2
-        },
-        {
-            question: "What does RAM stand for?",
-            options: ["Read Access Memory", "Random Access Memory", "Run All Memory", "Rapid Action Machine"],
-            answer: 1
-        }
+        { question: "What does CPU stand for?", options: ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Control Processing User"], answer: 0 },
+        { question: "Which part is called the brain of a computer?", options: ["Monitor", "Keyboard", "CPU", "Mouse"], answer: 2 },
+        { question: "Which device is used to type text?", options: ["Monitor", "Keyboard", "Speaker", "Printer"], answer: 1 },
+        { question: "Which device displays output?", options: ["Mouse", "Scanner", "Monitor", "Microphone"], answer: 2 },
+        { question: "What does RAM stand for?", options: ["Read Access Memory", "Random Access Memory", "Run All Memory", "Rapid Action Machine"], answer: 1 },
+        { question: "Which device is used to point and click?", options: ["Printer", "Speaker", "Mouse", "Monitor"], answer: 2 },
+        { question: "What does ROM stand for?", options: ["Read Only Memory", "Run Only Machine", "Random Output Memory", "Read Output Machine"], answer: 0 },
+        { question: "Which of these is an input device?", options: ["Monitor", "Printer", "Speaker", "Scanner"], answer: 3 },
+        { question: "Which of these is an operating system?", options: ["Microsoft Word", "Windows", "Google Chrome", "PowerPoint"], answer: 1 },
+        { question: "What is the full form of USB?", options: ["Universal Serial Bus", "United System Board", "Universal System Backup", "User Serial Board"], answer: 0 },
+        { question: "Which device prints documents on paper?", options: ["Scanner", "Keyboard", "Printer", "Mouse"], answer: 2 },
+        { question: "Which is a storage device?", options: ["Monitor", "Hard disk", "Keyboard", "Microphone"], answer: 1 },
+        { question: "What is the smallest unit of data?", options: ["Bit", "Byte", "Kilobyte", "Megabyte"], answer: 0 },
+        { question: "How many bits are in a byte?", options: ["2", "4", "8", "16"], answer: 2 },
+        { question: "Which software is used to browse websites?", options: ["Calculator", "Paint", "Notepad", "Web browser"], answer: 3 },
+        { question: "What does WWW stand for?", options: ["World Wide Web", "World Web Window", "Wide World Work", "Web World Wide"], answer: 0 },
+        { question: "Which component performs calculations?", options: ["Monitor", "ALU", "Keyboard", "Printer"], answer: 1 },
+        { question: "Which is an example of an output device?", options: ["Mouse", "Keyboard", "Speaker", "Scanner"], answer: 2 },
+        { question: "What is the main function of an operating system?", options: ["Manage computer resources", "Print only", "Type documents only", "Play sound only"], answer: 0 },
+        { question: "Which number system uses only 0 and 1?", options: ["Decimal", "Octal", "Hexadecimal", "Binary"], answer: 3 }
     ],
+
     mathematics: [
-        {
-            question: "What is 5 + 7?",
-            options: ["10", "11", "12", "13"],
-            answer: 2
-        },
-        {
-            question: "What is 9 × 6?",
-            options: ["45", "54", "56", "63"],
-            answer: 1
-        },
-        {
-            question: "What is 15 − 8?",
-            options: ["5", "6", "7", "8"],
-            answer: 2
-        },
-        {
-            question: "What is 36 ÷ 4?",
-            options: ["6", "8", "9", "12"],
-            answer: 2
-        },
-        {
-            question: "What is the square of 5?",
-            options: ["10", "15", "20", "25"],
-            answer: 3
-        }
+        { question: "What is 5 + 7?", options: ["10", "11", "12", "13"], answer: 2 },
+        { question: "What is 9 × 6?", options: ["45", "54", "56", "63"], answer: 1 },
+        { question: "What is 15 − 8?", options: ["5", "6", "7", "8"], answer: 2 },
+        { question: "What is 36 ÷ 4?", options: ["6", "8", "9", "12"], answer: 2 },
+        { question: "What is the square of 5?", options: ["10", "15", "20", "25"], answer: 3 },
+        { question: "What is 12 + 18?", options: ["28", "30", "32", "36"], answer: 1 },
+        { question: "What is 7 × 8?", options: ["54", "56", "64", "48"], answer: 1 },
+        { question: "What is 100 ÷ 10?", options: ["5", "20", "10", "15"], answer: 2 },
+        { question: "What is the square root of 81?", options: ["7", "8", "9", "10"], answer: 2 },
+        { question: "What is 25% of 200?", options: ["25", "40", "50", "75"], answer: 2 },
+        { question: "What is the value of 3²?", options: ["6", "9", "12", "15"], answer: 1 },
+        { question: "Solve: 2x = 10", options: ["2", "3", "5", "10"], answer: 2 },
+        { question: "How many degrees are in a right angle?", options: ["45°", "90°", "180°", "360°"], answer: 1 },
+        { question: "What is the perimeter of a square with side 4 cm?", options: ["8 cm", "12 cm", "16 cm", "20 cm"], answer: 2 },
+        { question: "What is 1/2 + 1/2?", options: ["1/4", "1", "2", "3/2"], answer: 1 },
+        { question: "What is the value of 10³?", options: ["100", "300", "1000", "30"], answer: 2 },
+        { question: "What is the average of 2, 4, and 6?", options: ["3", "4", "5", "6"], answer: 1 },
+        { question: "What is 0.5 as a fraction?", options: ["1/2", "1/3", "1/4", "2/3"], answer: 0 },
+        { question: "What is the sum of angles in a triangle?", options: ["90°", "180°", "270°", "360°"], answer: 1 },
+        { question: "What is 15% of 100?", options: ["10", "12", "15", "20"], answer: 2 }
+    ],
+
+    physics: [
+        { question: "What is the SI unit of force?", options: ["Joule", "Newton", "Watt", "Pascal"], answer: 1 },
+        { question: "What is the SI unit of energy?", options: ["Joule", "Newton", "Ampere", "Volt"], answer: 0 },
+        { question: "What is the approximate speed of light in vacuum?", options: ["300,000 km/s", "150,000 km/s", "30,000 km/s", "3,000 km/s"], answer: 0 },
+        { question: "What is the SI unit of power?", options: ["Joule", "Watt", "Newton", "Ohm"], answer: 1 },
+        { question: "Which instrument measures temperature?", options: ["Barometer", "Thermometer", "Ammeter", "Voltmeter"], answer: 1 },
+        { question: "What is the SI unit of electric current?", options: ["Volt", "Ohm", "Ampere", "Watt"], answer: 2 },
+        { question: "What is the acceleration due to gravity near Earth's surface?", options: ["4.9 m/s²", "9.8 m/s²", "15 m/s²", "20 m/s²"], answer: 1 },
+        { question: "Which law states that every action has an equal and opposite reaction?", options: ["Newton's first law", "Newton's second law", "Newton's third law", "Ohm's law"], answer: 2 },
+        { question: "What is the SI unit of frequency?", options: ["Hertz", "Decibel", "Meter", "Second"], answer: 0 },
+        { question: "Which energy does a moving object possess?", options: ["Potential energy", "Kinetic energy", "Chemical energy", "Nuclear energy"], answer: 1 },
+        { question: "What is the SI unit of electric resistance?", options: ["Volt", "Ampere", "Ohm", "Watt"], answer: 2 },
+        { question: "Which device measures electric current?", options: ["Ammeter", "Thermometer", "Barometer", "Speedometer"], answer: 0 },
+        { question: "Sound cannot travel through which medium?", options: ["Water", "Air", "Steel", "Vacuum"], answer: 3 },
+        { question: "Which type of lens converges parallel light rays?", options: ["Concave lens", "Convex lens", "Plane glass", "None of these"], answer: 1 },
+        { question: "What is the SI unit of pressure?", options: ["Pascal", "Joule", "Tesla", "Coulomb"], answer: 0 },
+        { question: "Which form of energy comes from the Sun?", options: ["Solar energy", "Sound energy", "Chemical energy only", "Elastic energy"], answer: 0 },
+        { question: "What is the formula for speed?", options: ["Time ÷ distance", "Distance ÷ time", "Distance × time", "Mass × acceleration"], answer: 1 },
+        { question: "Which particle has a negative electric charge?", options: ["Proton", "Neutron", "Electron", "Nucleus"], answer: 2 },
+        { question: "Which instrument measures atmospheric pressure?", options: ["Barometer", "Ammeter", "Voltmeter", "Calorimeter"], answer: 0 },
+        { question: "What is the SI unit of work?", options: ["Watt", "Newton", "Joule", "Ampere"], answer: 2 }
+    ],
+
+    programming: [
+        { question: "Which symbol is commonly used to end a statement in C++?", options: [".", ";", ":", ","], answer: 1 },
+        { question: "Which keyword declares an integer variable in C++?", options: ["int", "text", "number", "integerType"], answer: 0 },
+        { question: "Which data type stores true or false?", options: ["float", "char", "bool", "string"], answer: 2 },
+        { question: "Which operator checks equality in JavaScript?", options: ["=", "===", "+=", "*="], answer: 1 },
+        { question: "Which loop is commonly used when the number of repetitions is known?", options: ["for loop", "if statement", "switch", "return"], answer: 0 },
+        { question: "What is a variable?", options: ["A storage location for data", "A type of monitor", "A programming error only", "A web browser"], answer: 0 },
+        { question: "Which statement makes a decision based on a condition?", options: ["print", "if", "input", "break"], answer: 1 },
+        { question: "What is a function?", options: ["A reusable block of code", "A computer cable", "A data screen", "A file extension only"], answer: 0 },
+        { question: "Which Python function displays output?", options: ["input()", "read()", "print()", "showText()"], answer: 2 },
+        { question: "Which Python symbol starts a comment on a line?", options: ["//", "#", "/*", "<!--"], answer: 1 },
+        { question: "Which data type stores decimal numbers in Python?", options: ["int", "bool", "float", "list"], answer: 2 },
+        { question: "Which operator performs multiplication?", options: ["+", "*", "/", "%"], answer: 1 },
+        { question: "What is an array commonly used for?", options: ["Storing multiple values", "Displaying images only", "Turning off a computer", "Connecting a keyboard"], answer: 0 },
+        { question: "What does a syntax error mean?", options: ["The code breaks language rules", "The computer has no screen", "The internet is slow", "The program is always correct"], answer: 0 },
+        { question: "Which keyword can return a value from a function?", options: ["stop", "return", "repeat", "skip"], answer: 1 },
+        { question: "What is debugging?", options: ["Finding and fixing errors", "Deleting every file", "Installing a keyboard", "Writing a title"], answer: 0 },
+        { question: "Which HTML tag creates a paragraph?", options: ["<h1>", "<img>", "<p>", "<table>"], answer: 2 },
+        { question: "Which CSS property changes text color?", options: ["font-style", "background", "color", "spacing"], answer: 2 },
+        { question: "Which JavaScript keyword declares a block-scoped variable that can be reassigned?", options: ["let", "const", "fixed", "define"], answer: 0 },
+        { question: "What is an algorithm?", options: ["A step-by-step procedure", "A computer screen", "A programming language only", "A storage device"], answer: 0 }
+    ],
+
+    english: [
+        { question: "What is the plural of 'child'?", options: ["Childs", "Children", "Childes", "Childrens"], answer: 1 },
+        { question: "Choose the correct article: ___ apple.", options: ["A", "An", "The only", "No article ever"], answer: 1 },
+        { question: "What is the past tense of 'go'?", options: ["Goed", "Gone", "Went", "Going"], answer: 2 },
+        { question: "Which word is a noun?", options: ["Quickly", "Beautiful", "Happiness", "Run"], answer: 2 },
+        { question: "What is the opposite of 'ancient'?", options: ["Old", "Modern", "Historic", "Past"], answer: 1 },
+        { question: "Choose the correct spelling.", options: ["Beautifull", "Beutiful", "Beautiful", "Beautifal"], answer: 2 },
+        { question: "Which word is a verb?", options: ["Jump", "Blue", "Happiness", "Tall"], answer: 0 },
+        { question: "What is the comparative form of 'good'?", options: ["Gooder", "Best", "Better", "More good"], answer: 2 },
+        { question: "Choose the correct sentence.", options: ["She go to school.", "She goes to school.", "She going school.", "She gone to school."], answer: 1 },
+        { question: "Which punctuation mark ends a question?", options: ["Full stop", "Comma", "Question mark", "Colon"], answer: 2 },
+        { question: "What is a synonym of 'happy'?", options: ["Joyful", "Angry", "Sad", "Tired"], answer: 0 },
+        { question: "What is the opposite of 'difficult'?", options: ["Hard", "Easy", "Complex", "Tough"], answer: 1 },
+        { question: "Which pronoun can replace 'Ali'?", options: ["They", "It", "He", "We"], answer: 2 },
+        { question: "Choose the correct past tense: 'She ___ a book yesterday.'", options: ["read", "reads", "reading", "has read tomorrow"], answer: 0 },
+        { question: "Which word is an adjective?", options: ["Slowly", "Beautiful", "Speak", "Teacher"], answer: 1 },
+        { question: "What is the plural of 'mouse' (the animal)?", options: ["Mouses", "Mices", "Mouse", "Mice"], answer: 3 },
+        { question: "Choose the correct preposition: 'The book is ___ the table.'", options: ["on", "at to", "by of", "from into"], answer: 0 },
+        { question: "Which sentence is in the future tense?", options: ["I walked home.", "I walk home.", "I will walk home.", "I am walking home now."], answer: 2 },
+        { question: "What is the opposite of 'generous'?", options: ["Kind", "Selfish", "Helpful", "Friendly"], answer: 1 },
+        { question: "Which word is an adverb?", options: ["Quickly", "Quick", "Runner", "Bright"], answer: 0 }
     ]
 };
+
 
 const quizSubjectSelect = document.getElementById("quizSubject");
 const quizTitle = document.getElementById("quizTitle");
