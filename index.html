@@ -190,9 +190,374 @@ footer {
         font-size: 30px;
     }
 }
-</style>
-</head>
 
+/* About Us Section */
+.about-section {
+    padding: 60px 7%;
+    background: #ffffff;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-tag {
+    display: inline-block;
+    color: #5145cd;
+    background: #eeecff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-heading h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.about-heading h2 span {
+    color: #5145cd;
+}
+
+.about-heading p {
+    color: #666d82;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666d82;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #5145cd;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.about-card {
+    background: #f5f7ff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e7e7ff;
+}
+
+.about-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.about-card h4 {
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #666d82;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-heading h2 {
+        font-size: 27px;
+    }
+}
+
+/* Contact Us Styling */
+.contact-box {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f5f7ff;
+    border: 1px solid #e7e7ff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+#contactForm {
+    display: grid;
+    gap: 12px;
+}
+
+#contactForm label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8dcef;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 13px;
+    background: #5145cd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: #3930a5;
+}
+
+#contactStatus {
+    color: #287a45;
+    text-align: center;
+}
+/* MCQs & Quiz Styling */
+.mcqs-section {
+    padding: 60px 20px;
+    background: #f5f7ff;
+}
+
+.mcqs-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.mcqs-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mcqs-tag {
+    display: inline-block;
+    background: #eeecff;
+    color: #5145cd;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mcqs-heading h2 {
+    margin: 15px 0;
+    font-size: 32px;
+}
+
+.mcqs-heading h2 span {
+    color: #5145cd;
+}
+
+.mcqs-heading p {
+    color: #666d82;
+}
+
+.quiz-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+.quiz-card h3 {
+    margin-bottom: 20px;
+}
+
+#questionNumber {
+    color: #5145cd;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#questionText {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#answerOptions {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid #d8dcef;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-option:hover {
+    background: #f5f7ff;
+}
+
+.quiz-option input {
+    padding: 0;
+}
+
+#quizFeedback {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#quizScore {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#nextQuestionBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .quiz-card {
+        padding: 20px;
+    }
+
+    .mcqs-heading h2 {
+        font-size: 26px;
+    }
+}
+
+/* ===== STUDYMATE PURPLE QUIZ THEME ===== */
+
+#quizTitle {
+    color: #6d28d9;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#questionNumber {
+    color: #7c3aed;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#questionText {
+    color: #2e1065;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+#answerOptions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.quiz-option {
+    background: #f5f0ff;
+    color: #4c1d95;
+    border: 2px solid #ddd6fe;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.quiz-option:hover:not(:disabled) {
+    background: #ede9fe;
+    border-color: #8b5cf6;
+    transform: translateY(-2px);
+}
+
+.quiz-option:disabled {
+    cursor: default;
+    opacity: 0.85;
+}
+
+#quizFeedback {
+    background: #f5f0ff;
+    color: #5b21b6;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 12px 0;
+    font-weight: 600;
+}
+
+#quizScore {
+    color: #6d28d9;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+#nextQuestionBtn {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#nextQuestionBtn:hover:not(:disabled) {
+    background: #5b21b6;
+}
+
+#nextQuestionBtn:disabled {
+    background: #c4b5fd;
+    cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+    #answerOptions {
+        grid-template-columns: 1fr;
+    }
+
+    #questionText {
+        font-size: 17px;
+    }
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
 <body>
 
 <header>
@@ -200,7 +565,10 @@ footer {
     <nav>
         <a href="#home">Home</a>
         <a href="#notes">Notes</a>
+        <a href="#mcqs">MCQs</a>
         <a href="#add">Add Notes</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 </header>
 
@@ -286,6 +654,157 @@ footer {
         </form>
     </section>
 </main>
+<section id="mcqs" class="mcqs-section">
+    <div class="mcqs-container">
+
+        <div class="mcqs-heading">
+            <span class="mcqs-tag">TEST YOUR KNOWLEDGE</span>
+            <h2>MCQs & <span>Exam Preparation</span></h2>
+            <p>Practice questions and check your knowledge.</p>
+        </div>
+
+        <div class="quiz-card">
+
+    <label for="quizSubject">Choose Your Subject:</label>
+
+    <select id="quizSubject">
+        <option value="computer">Computer Science</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="physics">Physics</option>
+        <option value="programming">Programming</option>
+        <option value="english">English</option>
+    </select>
+
+    <h3 id="quizTitle">Computer Science Quiz</h3>
+
+            <p id="questionNumber">Question 1 of 5</p>
+            <h4 id="questionText">Loading question...</h4>
+
+            <div id="answerOptions"></div>
+
+            <p id="quizFeedback" aria-live="polite"></p>
+
+            <button type="button" id="nextQuestionBtn">
+                Next Question
+            </button>
+
+            <p id="quizScore"></p>
+        </div>
+
+    </div>
+</section>
+<!-- End MCQs Section -->
+
+<section id="about" class="about-section">
+    <div class="about-container">
+
+        <div class="about-heading">
+            <span class="about-tag">ABOUT STUDYMATE</span>
+            <h2>About <span>StudyMate</span></h2>
+            <p>Learn Smart. Study Better.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Learning Partner 🎓</h3>
+
+                <p>
+                    StudyMate is a student-focused platform
+                    designed to make learning easier and more
+                    organized.
+                </p>
+
+                <p>
+                    Our goal is to help students find useful
+                    subject-wise notes, semester-based study
+                    materials, and resources for exam preparation.
+                </p>
+
+                <p>
+                    Explore your study materials in one place
+                    and make your learning journey simpler.
+                </p>
+
+                <a href="#notes" class="about-button">
+                    Explore Notes
+                </a>
+            </div>
+
+            <div class="about-highlights">
+                <div class="about-card">
+                    <div class="about-icon">📚</div>
+                    <h4>Organized Notes</h4>
+                    <p>Find notes by subject and semester.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h4>Student Focused</h4>
+                    <p>Study resources designed for students.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">📄</div>
+                    <h4>PDF Resources</h4>
+                    <p>Access available downloadable notes.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">💡</div>
+                    <h4>Learn Better</h4>
+                    <p>Keep your study materials organized.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="about-section">
+    <div class="about-container">
+
+        <div class="about-heading">
+            <span class="about-tag">GET IN TOUCH</span>
+            <h2>Contact <span>Us</span></h2>
+            <p>We are here to help you learn better!</p>
+        </div>
+
+        <div class="contact-box">
+            <form id="contactForm">
+
+                <label for="contactName">Your Name</label>
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="contactEmail">Email Address</label>
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="contactMessage">Your Message</label>
+                <textarea
+                    id="contactMessage"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p id="contactStatus" role="status"></p>
+
+            </form>
+        </div>
+    </div>
+</section>
 
 <footer>
     <p>© 2026 StudyMate | Learn Better, Achieve More 🎓</p>
@@ -344,10 +863,12 @@ function saveNotes() {
         localStorage.setItem("studymateNotes", JSON.stringify(notes));
         return true;
     } catch (error) {
-        alert("Notes could not be saved. Check your browser storage.");
+        console.error("Notes save error:", error);
+        alert("Notes save nahi huay: " + error.message);
         return false;
     }
 }
+
 
 function renderNotes() {
     const query = search.value.toLowerCase().trim();
@@ -382,9 +903,9 @@ function renderNotes() {
         content.textContent = note.content;
 
         const download = document.createElement("button");
-        download.textContent = "Download TXT";
-        download.type = "button";
-        download.onclick = () => downloadNote(note);
+download.textContent = "Download PDF";
+download.type = "button";
+download.onclick = () => downloadNote(note);
 
         card.append(tag, heading, semester, content, download);
 
@@ -407,25 +928,32 @@ function renderNotes() {
 }
 
 function downloadNote(note) {
-    const text = [
-        note.title,
-        "Subject: " + note.subject,
-        "Semester: " + note.semester,
-        "",
-        note.content
-    ].join("\n");
+    if (!window.jspdf) {
+        alert("PDF library load nahi hui. Internet check karein aur page refresh karein.");
+        return;
+    }
 
-    const blob = new Blob([text], {
-        type: "text/plain;charset=utf-8"
-    });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
 
-    link.href = url;
-    link.download = note.title.replace(/[^a-z0-9_-]/gi, "_") + ".txt";
-    link.click();
+    doc.setFontSize(18);
+    doc.text(String(note.title || "StudyMate Notes"), 15, 20);
 
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    doc.setFontSize(12);
+    doc.text("Subject: " + String(note.subject || ""), 15, 32);
+    doc.text("Semester: " + String(note.semester || ""), 15, 40);
+
+    const content = doc.splitTextToSize(
+        String(note.content || ""),
+        180
+    );
+
+    doc.text(content, 15, 52);
+
+    const filename = String(note.title || "StudyMate_Notes")
+        .replace(/[^a-z0-9_-]/gi, "_");
+
+    doc.save(filename + ".pdf");
 }
 
 document.getElementById("notesForm").addEventListener("submit", event => {
@@ -463,6 +991,189 @@ subjectFilter.addEventListener("change", renderNotes);
 semesterFilter.addEventListener("change", renderNotes);
 
 renderNotes();
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+
+    if (!name || !email || !message) {
+        document.getElementById("contactStatus").textContent =
+            "Please fill in all fields.";
+        return;
+    }
+
+    document.getElementById("contactStatus").textContent =
+        "Thank you, " + name + "! Your message has been received in this demo.";
+    this.reset();
+});
+
+const quizQuestionsBySubject = {
+    computer: [
+        {
+            question: "What does CPU stand for?",
+            options: ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Control Processing User"],
+            answer: 0
+        },
+        {
+            question: "Which part is called the brain of a computer?",
+            options: ["Monitor", "Keyboard", "CPU", "Mouse"],
+            answer: 2
+        },
+        {
+            question: "Which device is used to type text?",
+            options: ["Monitor", "Keyboard", "Speaker", "Printer"],
+            answer: 1
+        },
+        {
+            question: "Which device displays output?",
+            options: ["Mouse", "Scanner", "Monitor", "Microphone"],
+            answer: 2
+        },
+        {
+            question: "What does RAM stand for?",
+            options: ["Read Access Memory", "Random Access Memory", "Run All Memory", "Rapid Action Machine"],
+            answer: 1
+        }
+    ],
+    mathematics: [
+        {
+            question: "What is 5 + 7?",
+            options: ["10", "11", "12", "13"],
+            answer: 2
+        },
+        {
+            question: "What is 9 × 6?",
+            options: ["45", "54", "56", "63"],
+            answer: 1
+        },
+        {
+            question: "What is 15 − 8?",
+            options: ["5", "6", "7", "8"],
+            answer: 2
+        },
+        {
+            question: "What is 36 ÷ 4?",
+            options: ["6", "8", "9", "12"],
+            answer: 2
+        },
+        {
+            question: "What is the square of 5?",
+            options: ["10", "15", "20", "25"],
+            answer: 3
+        }
+    ]
+};
+
+const quizSubjectSelect = document.getElementById("quizSubject");
+const quizTitle = document.getElementById("quizTitle");
+const questionNumber = document.getElementById("questionNumber");
+const questionText = document.getElementById("questionText");
+const answerOptions = document.getElementById("answerOptions");
+const quizFeedback = document.getElementById("quizFeedback");
+const nextQuestionBtn = document.getElementById("nextQuestionBtn");
+const quizScore = document.getElementById("quizScore");
+
+let currentQuestionIndex = 0;
+let score = 0;
+let answered = false;
+
+function showQuestion() {
+    const subject = quizSubjectSelect.value;
+    const questions = quizQuestionsBySubject[subject];
+
+    if (!questions || questions.length === 0) {
+        questionText.textContent = "Questions are not available yet.";
+        return;
+    }
+
+    const question = questions[currentQuestionIndex];
+
+    quizTitle.textContent =
+        quizSubjectSelect.options[quizSubjectSelect.selectedIndex].text + " Quiz";
+
+    questionNumber.textContent =
+        `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+
+    questionText.textContent = question.question;
+    answerOptions.replaceChildren();
+    quizFeedback.textContent = "";
+    quizScore.textContent = `Score: ${score}`;
+    nextQuestionBtn.textContent =
+        currentQuestionIndex === questions.length - 1 ? "See Result" : "Next Question";
+
+    answered = false;
+    nextQuestionBtn.disabled = true;
+
+    question.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = option;
+        button.className = "quiz-option";
+
+        button.addEventListener("click", () => {
+            if (answered) return;
+
+            answered = true;
+
+            if (index === question.answer) {
+                score++;
+                quizFeedback.textContent = "Correct answer! Well done!";
+            } else {
+                quizFeedback.textContent =
+                    "Incorrect. Correct answer: " + question.options[question.answer];
+            }
+
+            quizScore.textContent = `Score: ${score}`;
+
+            answerOptions.querySelectorAll("button").forEach((btn) => {
+                btn.disabled = true;
+            });
+
+            nextQuestionBtn.disabled = false;
+        });
+
+        answerOptions.appendChild(button);
+    });
+}
+
+nextQuestionBtn.addEventListener("click", () => {
+    const questions = quizQuestionsBySubject[quizSubjectSelect.value];
+
+    if (!answered) return;
+
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion();
+    } else {
+        questionNumber.textContent = "Quiz Completed!";
+        questionText.textContent =
+            `Your final score is ${score} out of ${questions.length}.`;
+        answerOptions.replaceChildren();
+        quizFeedback.textContent = "Great effort! Choose a subject to try again.";
+        nextQuestionBtn.textContent = "Restart Quiz";
+        nextQuestionBtn.disabled = false;
+
+        nextQuestionBtn.onclick = () => {
+            currentQuestionIndex = 0;
+            score = 0;
+            nextQuestionBtn.onclick = null;
+            showQuestion();
+        };
+    }
+});
+
+quizSubjectSelect.addEventListener("change", () => {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextQuestionBtn.onclick = null;
+    showQuestion();
+});
+
+showQuestion();
+
 </script>
 
 </body>
